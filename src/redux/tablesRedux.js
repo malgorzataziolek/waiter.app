@@ -1,4 +1,4 @@
-import { API_URL } from '../next';
+import { API_URL } from '../config';
 //selectors
 export const getAllTables = ({ tables }) => tables;
 export const getTableById = ({ tables }, tableId) =>

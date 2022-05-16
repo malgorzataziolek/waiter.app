@@ -1,9 +1,11 @@
+import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
-import React from 'react';
 import store from './redux/store';
+import 'font-awesome/css/font-awesome.min.css';
 
 ReactDOM.render(
 	<React.StrictMode>
@@ -13,6 +15,5 @@ ReactDOM.render(
 			</Provider>
 		</BrowserRouter>
 	</React.StrictMode>,
-
-	document.querySelector('#root')
+	document.getElementById('root')
 );
